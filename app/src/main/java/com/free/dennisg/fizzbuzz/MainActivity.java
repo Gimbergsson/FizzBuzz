@@ -2,6 +2,7 @@ package com.free.dennisg.fizzbuzz;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,8 +11,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_activity);
 
+        TextView consoleOutTextView = (TextView) findViewById(R.id.textView);
+
+        String text = "";
+
         for (int i = 1; i <= 100; i++ ){
-            String text = "";
+
+            text += "\n";
 
             if (i % 3 == 0){
                 text += "Fizz";
@@ -20,11 +26,13 @@ public class MainActivity extends AppCompatActivity {
                 text += (text != "" ? "" : "") + "Buzz";
             }
 
-            if(text == ""){
+            if(i % 5 != 0 && i % 3 != 0){
                 text += String.valueOf(i);
             }
 
-            System.out.println(text);
+            if (consoleOutTextView != null) {
+                consoleOutTextView.setText(text);
+            }
         }
     }
 }
