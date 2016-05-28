@@ -54,4 +54,32 @@
         android:textColor="#EEEEEE"
         android:textAlignment="center" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If divisible by 3 =Fizz "
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:textColor="#EEEEEE" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3"
+        android:text="If divisible by 5 =Buzz"
+        android:textColor="#EEEEEE" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="If divisible by 3 &amp; 5 =FizzBuzz"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
+        android:layout_alignStart="@+id/textView4"
+        android:singleLine="true"
+        android:textColor="#EEEEEE" />
+
 </RelativeLayout>
