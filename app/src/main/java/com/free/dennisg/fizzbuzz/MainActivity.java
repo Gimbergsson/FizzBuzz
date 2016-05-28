@@ -64,10 +64,6 @@ public class MainActivity extends AppCompatActivity {
                 text += (text != "" ? "" : "") + "Buzz";
             }
 
-            if(i % 5 != 0 && i % 3 != 0){
-                text += String.valueOf(i);
-            }
-
             if (consoleOutTextView != null) {
                 consoleOutTextView.setText(text);
             }
